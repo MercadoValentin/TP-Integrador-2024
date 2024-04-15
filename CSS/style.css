@@ -50,12 +50,60 @@ nav a{
 nav a:hover{
     font-size: 24px;
 }
+body{
+    overflow: hidden;
+}
+#login{
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    padding: 8px 8px 8px 0;
+    gap: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: rgba(1, 1, 1, 0.4);
+    width: 400px;
+    left: -308px;
+    z-index: 10;
+    transition: left linear 0.12s;
+}
+#login:hover{
+    left: 0;
+}
+#login form{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 60%;
+}
+#login form p{
+    font-size: 20px;
+    margin-left: 4px;
+}
+#login form input{
+    font-size: 16px;
+    padding: 4px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    border: none;
+    outline: none;
+}
+#login form button{
+    align-self: center;
+    width: 50%;
+}
+#login img{
+    width: 80px;
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(145deg) brightness(116%) contrast(104%);
+}
 #inicio{
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
     height: 100svh;
     background-color: #796de6;
+    position: relative;
 }
 .main{
     display: flex;
@@ -204,7 +252,7 @@ li{
     padding: 28px;
     border: #fff solid 2px;
 }
-form{
+#contact{
     display: flex;
     flex-direction: column;
     justify-content: center;
